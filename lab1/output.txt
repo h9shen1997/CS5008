@@ -1,0 +1,143 @@
+1.First command (ls)
+-bash-4.2$ ls
+output.txt  text
+
+2.Second command (history)
+-bash-4.2$ history
+    1  ls
+    2  pwd
+    3  man
+    4  help
+    5  sort
+    6  help grep
+    7  man -k grep
+    8  vim text
+    9  grep smart text
+   10  nl text
+   11  sort text
+   12  clear
+   13  history
+   14  3
+   15  sleep 10
+   16  man ssh
+   17  clear
+   18  sudo multipass set local.driver=virtualbox
+   19  /usr/bin/sudo -l multipass set local.driver=virtualbox
+   20  ls
+   21  vim output.txt
+   22  ls
+   23  vim output.txt
+   24  history
+
+3.Third command (grep)
+-bash-4.2$ grep man output.txt
+    3  man
+    7  man -k grep
+   16  man ssh
+
+4.Fourth command (nl)
+-bash-4.2$ nl output.txt
+     1	-bash-4.2$ ls
+     2	output.txt  text
+       
+     3	-bash-4.2$ history
+     4	    1  ls
+     5	    2  pwd
+     6	    3  man
+     7	    4  help
+     8	    5  sort
+     9	    6  help grep
+    10	    7  man -k grep
+    11	    8  vim text
+    12	    9  grep smart text
+    13	   10  nl text
+    14	   11  sort text
+    15	   12  clear
+    16	   13  history
+    17	   14  3
+    18	   15  sleep 10
+    19	   16  man ssh
+    20	   17  clear
+    21	   18  sudo multipass set local.driver=virtualbox
+    22	   19  /usr/bin/sudo -l multipass set local.driver=virtualbox
+    23	   20  ls
+    24	   21  vim output.txt
+    25	   22  ls
+    26	   23  vim output.txt
+    27	   24  history
+       
+    28	-bash-4.2$ grep man output.txt
+    29	    3  man
+    30	    7  man -k grep
+    31	   16  man ssh
+
+5.Fifth command (sort)
+-bash-4.2$ sort output.txt
+
+
+
+       
+       
+     1	-bash-4.2$ ls
+     2	output.txt  text
+     3	-bash-4.2$ history
+     4	    1  ls
+     5	    2  pwd
+     6	    3  man
+     7	    4  help
+     8	    5  sort
+     9	    6  help grep
+    1  ls
+    10	    7  man -k grep
+    11	    8  vim text
+    12	    9  grep smart text
+    13	   10  nl text
+    14	   11  sort text
+    15	   12  clear
+    16	   13  history
+    17	   14  3
+    18	   15  sleep 10
+    19	   16  man ssh
+    2  pwd
+    20	   17  clear
+    21	   18  sudo multipass set local.driver=virtualbox
+    22	   19  /usr/bin/sudo -l multipass set local.driver=virtualbox
+    23	   20  ls
+    24	   21  vim output.txt
+    25	   22  ls
+    26	   23  vim output.txt
+    27	   24  history
+    28	-bash-4.2$ grep man output.txt
+    29	    3  man
+    3  man
+    3  man
+    30	    7  man -k grep
+    31	   16  man ssh
+    4  help
+    5  sort
+    6  help grep
+    7  man -k grep
+    7  man -k grep
+    8  vim text
+    9  grep smart text
+   10  nl text
+   11  sort text
+   12  clear
+   13  history
+   14  3
+   15  sleep 10
+   16  man ssh
+   16  man ssh
+   17  clear
+   18  sudo multipass set local.driver=virtualbox
+   19  /usr/bin/sudo -l multipass set local.driver=virtualbox
+   20  ls
+   21  vim output.txt
+   22  ls
+   23  vim output.txt
+   24  history
+-bash-4.2$ grep man output.txt
+-bash-4.2$ history
+-bash-4.2$ ls
+-bash-4.2$ nl output.txt
+output.txt  text

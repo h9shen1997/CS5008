@@ -1,0 +1,7 @@
+{
+    "git.ignoreLimitWarning": true,
+    "files.associations": {
+        "quicksort_median.h": "c",
+        "sort_comparison.h": "c"
+    }
+}

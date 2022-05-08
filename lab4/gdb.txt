@@ -1,0 +1,44 @@
+Reading symbols from /home/h9shen/H9shen_CS5008SPRING2022/lab4/greetings...done.
+(gdb) break 14
+Breakpoint 1 at 0x400648: file start.c, line 14.
+(gdb) break 15
+Breakpoint 2 at 0x400654: file start.c, line 15.
+(gdb) break 16
+Breakpoint 3 at 0x400660: file start.c, line 16.
+(gdb) break 17
+Breakpoint 4 at 0x40066c: file start.c, line 17.
+(gdb) run
+Starting program: /home/h9shen/H9shen_CS5008SPRING2022/lab4/greetings 
+
+Breakpoint 1, main () at start.c:14
+14	  StandardGreeting(&user);
+(gdb) print user->first_name
+$1 = 0x400769 "Big"
+(gdb) print user->last_name
+$2 = 0x40076d "Lebowski"
+(gdb) n
+Hello, Big!
+
+Breakpoint 2, main () at start.c:15
+15	  FormalGreeting(&user);
+(gdb) c
+Continuing.
+Greetings, ID: 42
+Name: Lebowski, Big
+
+Breakpoint 3, main () at start.c:16
+16	  InformalGoodbye(&user);
+(gdb) print user->first_name
+$3 = 0x400769 "Big"
+(gdb) print user->last_name
+$4 = 0x40076d "Lebowski"
+(gdb) n
+See ya later Big!
+
+Breakpoint 4, main () at start.c:17
+17	  FormalGoodbye(&user);
+(gdb) c
+Continuing.
+Good bye, ID: 42
+Lebowski, Big
+[Inferior 1 (process 27932) exited normally]
